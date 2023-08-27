@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryBackground: black;
+    --textColor: white;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Lato, sans-serif;
+    overflow: hidden;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--primaryBackground);
+    color: white;
+    display: flex;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Layout */
+.sideNavigation {
+    flex: 1;
+    font-size: 1.25rem;
+    min-width: 2em;
+    max-width: 15em;
+    background: var(--primaryBackground);
+    border: 2px solid blue;
+    border-left: none;
+    border-radius: 0 1em 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    padding: 1em;
+    animation: myanim 6s infinite;
+}
+@keyframes myanim {
+    20% {
+        border-color: red;
+    }
+}
+#list {
+    /* margin-right: 30px; */
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    top: 200px;
+    margin: 0;
+    height: 100vh;
+    min-width: 20vw;
+    background-color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-right: 2px solid lightblue;
+    opacity: 100%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 2px solid blue;
+    animation: myanim 6s infinite;
+}
+#soda {
+    position: fixed;
+    background: black;
+    width: 280px;
+    border-radius: 24px;
+    right: 0px;
+    margin-left: 400px;
+    z-index: 20;
+    top: 0;
+}
+
+.imagerole {
+    display: flex;
+    border-bottom: 2px solid grey;
+    border-radius: 0.5px;
+    padding-bottom: 3px;
+    position: sticky;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 11px;
+    margin: 25px;
+    background-color: #050505;
+    border-radius: 12px;
+}
+
+.imagerole img {
+    border-radius: 10px;
+    border-color: white;
+    border-right: 5px solid red;
+    border: 2px solid blue;
+    border-radius: 15px;
+    border-top: -20px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-style: solid;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+}
+
+.imagerole h2 {
+    color: #a4eaed;
+    text-shadow: 0px 2px 2px red;
+    font-size: 20px;
+    padding-left: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+#message {
+    background-color: #050505;
+    border: 0;
+    border-color: red;
+    outline: 0;
+    border-radius: 40px;
+    margin: 0;
+    margin-bottom: 1px solid;
+    margin-left: 28px;
+    padding: 25px;
+    width: 90%;
+    height: 10px;
+    text-indent: 30px;
+}
+
+.Container {
+    height: 200px;
+    overflow-x: auto;
+}
+
+.Content {
+    height: 300px;
+}
+
+.Flipped {
+    direction: rtl;
+}
+
+.Content {
+    direction: ltr;
+}
+
+#message #placeholder {
+    color: white;
+}
+
+#online-tab:active {
+    color: transparent;
+}
+
+#online {
+    
+}
+
+#offline-tab {
+    color: red;
+    border-color: black;
+    width:120px;
+    background-color: black;
+}
+
+#online-tab {
+    color: limegreen;
+    border: black;
+   width: 120px;
+    background-color: black;
+}
+#offline-tab:hover{
+    color: blue;
+        border: 2px solid blue;
+        border-top: 2px solid blue;
+        border-radius: 10px;
+        
+}
+
+#online-tab:hover {
+    color: blue;
+    border: 2px solid blue;
+    border-top: 2px solid blue;
+    border-radius: 10px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    list-style: outside;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 4px;
+    margin-right:0;
+}
+
+
+
+.sideNavigationButtons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    flex: 1
+}
+
+.sideNavListItem{
+    position: relative;
+}
+
+.NavIconWrapper{
+    position: absolute;
+    height: min-content;
+    width: min-content;
+    top: 0;
+}
+
+.Icon{
+    
+}
+.sideNavigationButtons li {
+    border-radius: 12px;
+    /* border-bottom: 2px solid grey; */
+    padding: 10px;
+    
+    
+}
+
+.sideNavigationButton {
+    display: flex;
+    /* text-shadow: 0px 1px 1px red; */
+    padding: 0.5em;
+    column-gap: 0.5em;
+}
+
+.sideNavigationButton:hover{
+    /* background-color: lightblue; */
+    border-bottom: 2px solid red;
+    border-radius: 2px;
+    transition: border-color 1s ease;
+   /*  border-bottom: 2px solid red; */
+    width: 100%;
+    
+}
+
+
+.profilePicSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.profilePicRounded {
+    border-radius: 30%;
+    border: 2px solid red;
+}
+
+.usernametype{
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    font-size: 18px;
+        
+    
+}
+
+
+
+.mainSection {
+    flex: 1;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSectionTopHeading {
+    font-size: 1.25rem;
+    text-align: center;
+    flex: none;
+}
+
+.mainSectionContents {
+    flex: 1;
+    display: flex;
+}
+
+.friendList {
+    flex: 1;
+    font-size: 1.25rem;
+    min-width: 2em;
+    max-width: 10em;
+    background: gray;
+    /*border: 2px solid red;*/
+    /*border-right: none;*/
+    border-radius: 1em 0 0 1em;
+    display: none;
+}
+
+.clipsSection {
+    flex: 1;
+    height: min-content;
+    /*display: flex;*/
+}
+
+.categoryBrowser {
+    width: 100%;
+    display: flex;
+    /*overflow: hidden;*/
+}
+
+.categoryBrowser button {
+    z-index: 2;
+}
+
+.categoryBrowserWindow {
+    flex: 1;
+    position: relative;
+}
+
+.categoryBrowserScroller {
+    width: 100%;
+    display: flex;
+    margin-block: 0;
+    transition: transform 1s ease;
+}
+
+.gameCategoryCard {
+    flex: none;
+    padding: 0.25rem;
+    position: relative;
+    filter: blur(0.6px);
+}
+
+.gameCategoryCard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.gameCategoryCard img {
+    aspect-ratio: 16/9;
+    object-position: center;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+    border-radius: 0.5em;
+}
+
+
+.gameCategoryCard:hover{
+    transform: scale(0.9);
+    filter: blur(0px);
+    transition: 0.3s;
+    min-height: 100%;
+    border: 3px red solid;
+    border-radius: 12px;
+
+}
+
+.gameCategoryCard a {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.gameCategoryCard h3 {
+    position: absolute;
+    text-decoration: solid;
+    text-shadow: 3px 1px 1px black;
+    z-index: 2;
+    margin: 0;
+}
+
+.scrollbar{
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 52px;
+    align-items: center;
+        justify-content: flex-start !important;
+        background-color: #050505;
+        height: calc(100vh - 98.97px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+       
+}
+
+.post{
+    margin: 0px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.image img{
+    height: 50vh;
+    padding: 8px;
+    margin-left: 350px;
+    align-items: center;
+    width: 50%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+        overflow: auto;
+        direction: ltr;
+        border-radius: 4px;
+        border: 3px solid transparent;
+        background-clip: content-box;
+
+}
+
+.fa-solid{
+    color: red;
+}
+
+
+
+/*@media only all and (max-width: 1280px) {*/
+/*    .gameCategoryCard {*/
+/*        width: 25%;*/
+/*    }*/
+/*}*/
+
+/*@media only all and (max-width: 1024px) {*/
+/*    .gameCategoryCard {*/
+/*        width: 33.3333%;*/
+/*    }*/
+/*}*/

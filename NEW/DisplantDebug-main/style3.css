@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryBackground: black;
+    --textColor: white;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Lato, sans-serif;
+    overflow: hidden;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--primaryBackground);
+    color: white;
+    display: flex;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Layout */
+.sideNavigation {
+    flex: 1;
+    font-size: 1.25rem;
+    min-width: 2em;
+    max-width: 15em;
+    background: var(--primaryBackground);
+    border: 2px solid red;
+    border-left: none;
+    border-radius: 0 1em 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    padding: 1em;
+}
+
+.sideNavigationButtons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    flex: 1
+}
+
+.sideNavigationButton {
+    /*background: gray;*/
+    display: flex;
+    padding: 0.5em;
+    column-gap: 0.5em;
+}
+
+.profilePicSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.profilePicRounded {
+    border-radius: 50%;
+}
+
+
+
+.mainSection {
+    flex: 1;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSectionTopHeading {
+    font-size: 1.25rem;
+    text-align: center;
+    flex: none;
+}
+
+.mainSectionContents {
+    flex: 1;
+    display: flex;
+}
+
+.friendList {
+    flex: 1;
+    font-size: 1.25rem;
+    min-width: 2em;
+    max-width: 10em;
+    background: gray;
+    /*border: 2px solid red;*/
+    /*border-right: none;*/
+    border-radius: 1em 0 0 1em;
+    display: none;
+}
+
+.clipsSection {
+    flex: 1;
+    /*display: flex;*/
+}
+
+.categoryBrowser {
+    width: 100%;
+    display: flex;
+    /*overflow: hidden;*/
+}
+
+.categoryBrowser button {
+    z-index: 2;
+}
+
+.categoryBrowserWindow {
+    flex: 1;
+    position: relative;
+}
+
+.categoryBrowserScroller {
+    width: 100%;
+    display: flex;
+    margin-block: 0;
+    transition: transform 1s ease;
+}
+
+.gameCategoryCard {
+    flex: none;
+    padding: 0.25rem;
+    position: relative;
+}
+
+.gameCategoryCard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gameCategoryCard img {
+    aspect-ratio: 16/9;
+    object-position: center;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+    border-radius: 0.5em;
+}
+
+.gameCategoryCard a {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px) brightness(0.8);
+}
+
+.gameCategoryCard h3 {
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+}
+
+
+/*@media only all and (max-width: 1280px) {*/
+/*    .gameCategoryCard {*/
+/*        width: 25%;*/
+/*    }*/
+/*}*/
+
+/*@media only all and (max-width: 1024px) {*/
+/*    .gameCategoryCard {*/
+/*        width: 33.3333%;*/
+/*    }*/
+/*}*/

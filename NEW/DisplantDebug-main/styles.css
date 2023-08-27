@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homefeed h1 {
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-width: 1px;
+  padding-bottom: 12px;
+  font-size: 26px;
+  text-shadow: 0px 1px 1px white;
+}
+
+.homefeed h1 >div{
+  background-color: white;
+}
+
+.topicsection {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: -10px;
+  justify-content: center;
+  
+}
+
+.topicsection >div{
+  display: flex;
+}
+.topicsection::-webkit-scrollbar{
+  display: none;
+}
+
+.scrollable{
+  width: 500px;
+  position: relative;
+  margin: 0 auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: inline-block;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.hottopics {
+  padding: 8px;
+  width: 300px  ;
+  margin: 0 10rem;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 0;
+}
+
+.hottopics h1 {
+  color: lightblue;
+  font-size: 19px;
+  text-shadow: 0px 2px 2px red;
+  font-weight: bold;
+  pointer-events: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  height: 90px;
+  z-index: 1;
+  width: 180px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hottopics h1:hover {
+}
+
+.hottopics img {
+  height: 90px;
+  width: 180px;
+  border-radius: 10px;
+  filter: blur(3.8px);
+}
+
+.hottopics img:hover {
+  filter: blur(0px);
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.hottopics:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+
+  border-radius: 12px;
+  min-height: 100%;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  cursor: url("images/Nexus-Neon-Red-Mini-normal.svg");
+  backdrop-filter: blur(15px);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  position: relative;
+}
+.cursor {
+}
+
+#sidebar-wrapper {
+  height: 100%;
+  width: 30%;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#list {
+  margin-top: 15vh;
+  /* margin-right: 30px; */
+  max-width: 30vw;
+  position: absolute;
+  right: 0;
+  height: 90vh;
+  min-width: 20vw;
+  background-color: black;
+  border-radius: 2vmin;
+  border-right: 2px solid lightblue;
+  opacity: 91%;
+  border: 2px solid blue;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+  
+    animation: myanim 6s infinite;
+  
+  
+}
+
+#masterdiv {
+  flex-direction: row;
+  background-color: transparent;
+  border-bottom: red;
+  justify-content: center;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0;
+  bottom: 0%;
+  top: 0%;
+  overflow: scroll;
+  height: 1200px;
+
+}
+
+.sidebar {
+  display: flex;
+  cursor: pointer;
+  border-top-right-radius: 48px;
+  border-bottom-right-radius: 48px;
+  position: relative;
+  background: grey;
+  background: linear-gradient(black, rgba(255, 0, 0, 0.021));
+  left: 0;
+  background-color: black;
+  opacity: 100%;
+  justify-content: center;
+  border-color: 5px solid transparent;
+  top: 0;
+  bottom: 0;
+  cursor: auto;
+  border-right: 5px solid red;
+  width: 100%;
+  max-width: 500px;
+
+  /* margin-top: 40px; */
+  height: 100%;
+  flex-direction: column;
+  border: 2px solid blue;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+
+  animation: myanim 6s infinite;
+    
+    
+  }
+  
+  @keyframes myanim {
+    20% {
+      border-color: red;
+    }
+}
+
+.profilepic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+  
+  background-position: right;
+}
+
+.profilepic h2 {
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.profilepic h2 span {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.img-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  
+}
+.img-wrapper > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid red 2px;
+}
+
+
+img {
+  height: 100px;
+  border: blu;
+  width: 100px;
+}
+
+.scrollbar {
+  box-sizing: border-box;
+  margin: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #050505;
+  
+}
+
+.scrolling-element-inside {
+  direction: ltr;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  overflow: auto;
+  direction: ltr;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+.test {
+  height: 500px;
+}
+
+article {
+  background-color: black;
+  opacity: 80%;
+  border-radius: 10px;
+  border-style: solid;
+  border-left-style: none;
+  border-color: blue;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 5px;
+  display: inline-flex;
+  justify-content: center;
+  border-top: 0px;
+  border-bottom: 0px;
+  
+  
+  animation: myanim 6s infinite;
+}
+
+article div {
+  margin: 5px;
+}
+
+.image img {
+  min-height: 400px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 30%;
+  align-items: center;
+  justify-content: center;
+  min-width: 700px;
+  border-radius: 10px;
+  
+
+}
+
+.reactions {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  border-radius: 10px;
+}
+
+.reactions :hover {
+  background-color: transparent;
+  opacity: 54%;
+}
+
+.reactions img {
+  height: 105px;
+  width: 29px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: #a4eaed;
+  text-shadow: 0px 2px 2px red;
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+
+#table1 {
+  color: white;
+  position: absolute;
+  width: 50%;
+}
+
+.sidebarOption {
+  display: flex;
+  user-select: none;
+  margin:1.5rem;
+  justify-content: flex-start;
+  padding:1rem;
+  margin-left: 7rem;
+  height: min-content;
+  align-items: center;
+  color: red;
+  transform: translateX(0);
+}
+.scrollbar {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.sidebarOption .material-icons {
+  padding-right: 1rem;
+  display: inline-block;
+}
+.sidebarOption .material-symbols-outlined{
+  padding-right: 1rem;
+}
+
+.sidebarOption h2 {
+  font-family: sans-serif;
+  text-shadow: 0px 2px 2px red;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #a4eaed;
+}
+
+.sidebarOption:hover {
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  transform: translateX(-70px);
+  color: white;
+  margin-right: 100px;
+  transition: all 200ms ease;
+}
+
+.copyright h2 {
+  color: white;
+  margin: 190px;
+  margin-left:130px;
+  position: fixed;
+  opacity: 35%;
+  justify-content: center;
+  font-size: 12px;
+  cursor: text;
+}
+
+#soda {
+  position: fixed;
+  left: 1215px;
+  background: black;
+  width: 280px;
+  border-radius: 24px;
+  right: 0px;
+  margin-left: 400px;
+  z-index: 1;
+  top: 10px;
+}
+
+.imagerole {
+  display: flex;
+  border-radius: 10px;
+  padding-bottom: 3px;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 11px;
+  margin: 25px;
+  background-color: transparent;
+}
+.imagerole img {
+  border-radius: 14px;
+  border-style: solid;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+}
+
+.imagerole h2 {
+  color: #a4eaed;
+  text-shadow: 0px 2px 2px red;
+  font-size: 20px;
+  padding-left: 13px;
+}
+
+#message {
+  background-color: #050505;
+  border-color: red;
+  border-radius: 40px;
+  opacity: 45%;
+  width: 100%;
+  height: 40px;
+  text-indent: 20px;
+}
+
+.Container {
+  height: 200px;
+  overflow-x: auto;
+}
+.Content {
+  height: 300px;
+}
+
+.Flipped {
+  direction: rtl;
+}
+.Content {
+  direction: ltr;
+}
+
+#message #placeholder {
+  color: white;
+}
+
+#online-tab:active {
+  color: transparent;
+}
+
+#online {
+  overflow-y: scroll;
+}
+#offline-tab {
+  color: red;
+  border-color: black;
+  width: 100px;
+  
+  background-color: black;
+}
+
+#online-tab {
+  color: limegreen;
+  width: 180px;
+  background-color: black;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  list-style: outside;
+}
+
