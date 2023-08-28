@@ -1,0 +1,4 @@
+user authentication done today 
+have signup link clickable and link to a signup form 
+make a signup register form
+have the sign up button submit to to submit subpage
